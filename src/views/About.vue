@@ -1,5 +1,6 @@
 <template>
-    <div class="container">
+    <!-- <div class="container"> -->
+    <v-container  fluid>
         <div class="bio">
             <img class="main-img animate fadeInLeft" src="./../assets/images/me (2).jpg">
             <p class="bio-text animate fadeIn">
@@ -17,13 +18,14 @@
             </p>
             <img v-if="isVisible" :class="{ 'main-img animate fadeInRight' : isVisible }" src="./../assets/images/graduation (2).jpg">
         </div>
-        <h3>Some Tech that I use...</h3>
+        <h2 id="tech-title">Some Tech that I use...</h2>
         <div id="tech-container">
-            <div v-for="(img, index) in techImages" :key="index">
+            <div class="tech-item" v-for="(img, index) in techImages" :key="index">
                 <img :src="require(`@/assets/icons/${img.source}`)">
             </div>
         </div>
-    </div>
+    </v-container>
+    <!-- </div> -->
 </template>
 
 <script>
@@ -39,7 +41,8 @@ export default {
                 {source: 'python.png'},
                 {source: 'html.png'},
                 {source: 'css-3.png'},
-                {source: 'sql-server.png'}
+                {source: 'sql-server.png'},
+                {source: 'c.png'},
             ]
         }
     },
@@ -94,11 +97,20 @@ export default {
         color: #f7f7e8;
     }
 
+    #tech-title {
+        margin: 10vh
+    }
+
     #tech-container {
         display: flex;
+        height: 50vh;
         justify-content: space-evenly;
-        height: 20vh;
         flex-wrap: wrap;
+    }
+
+    .tech-item {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .animate {

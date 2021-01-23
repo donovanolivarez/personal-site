@@ -26,17 +26,12 @@ export default {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #364f6b;
-  height: auto;
-  width: auto;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-}
 ::-webkit-scrollbar {
   display: none;
 }

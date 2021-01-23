@@ -6,24 +6,24 @@
         <div class="contact-icons">
           <a href="https://www.linkedin.com/in/donovan-olivarez-571108191/"><img class="animatedMe" src="../assets/icons/linkedin.png" alt=""></a>
           <a href="https://github.com/donovanolivarez"><img class="animatedMe" src="../assets/icons/github.png" alt=""></a>
-          <a href="#contact"><img class="animatedMe" src="../assets/icons/email.png" alt=""></a>
+          <!-- <a href="#contact"><img class="animatedMe" src="../assets/icons/email.png" alt=""></a> -->
         </div>
       </div>
-      <div id="contact">
+      <!-- <div id="contact">
         <Contact />
-      </div>
+      </div> -->
     </div>
 
 </template>
 
 <script>
-import Contact from './../components/Contact'
+// import Contact from './../components/Contact'
 
 export default {
     name: "Home",
     components: {
-      Contact
-    }
+      // Contact
+    },
 }
 </script>
 
@@ -56,7 +56,7 @@ export default {
 
   .contact-icons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   #about {

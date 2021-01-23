@@ -12,9 +12,12 @@ Vue.config.productionTip = false
 // taken from https://stackoverflow.com/questions/39438094/best-way-to-have-global-css-in-vuejs
 import './assets/css/style.css'
 
+import vuetify from './plugins/vuetify';
+
 
 
 new Vue({
   render: h => h(App),
+  vuetify,
   router
 }).$mount('#app')
