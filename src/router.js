@@ -29,6 +29,10 @@ export default new Router({
         {
             path: '/*',
             component: 404
+        },
+        {
+            path: '/index.html',
+            component: Home
         }
     ]
 })
