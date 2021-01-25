@@ -25,14 +25,6 @@ export default new Router({
         },
         {
             path: '/contact', redirect: {name: 'home'}
-        },
-        {
-            path: '/*',
-            component: 404
-        },
-        {
-            path: '/index.html',
-            component: Home
         }
     ]
 })
