@@ -25,6 +25,7 @@
 
                         <v-card-actions>
                             <v-btn
+                                v-if="project.links.demo"
                                 color="orange"
                                 text
                             >
@@ -34,10 +35,13 @@
                             </v-btn>
 
                             <v-btn
+                                v-if="project.links.repo"
                                 color="orange"
                                 text
                             >
-                                Explore
+                            <a :href="project.links.repo">
+                                Repo
+                            </a>
                             </v-btn>
                         </v-card-actions>
                     </v-card>
@@ -67,8 +71,8 @@ export default {
                     src: "netless-card-preview.png",
                     description: "E-Commerce Site built using NodeJS and MongoDB",
                     links: {
-                        "repo": "",
-                        "demo": "https://donovanolivarez.github.io/pomosession/"
+                        "repo": "https://github.com/donovanolivarez/netless-shopping/tree/node-implementation",
+                        "demo": ""
                     }
                 },
             ] 
